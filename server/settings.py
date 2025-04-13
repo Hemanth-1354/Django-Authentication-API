@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-o-unc2k%j5zhrc8bl&$kej((tqskk%j=8ceh9f5)^+2nimq7%-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["https://django-authentication-api.onrender.com", "https://django-authentication-api-1.onrender.com"]
+ALLOWED_HOSTS = [""]
 
 
 # Application definition
@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
 ROOT_URLCONF = 'server.urls'
