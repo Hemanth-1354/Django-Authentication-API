@@ -1,2 +1,17 @@
-venv/
-db.sqlite3
+# Python
+__pycache__/
+*.pyc
+
+# Django
+*.log
+*.pot
+*.py[cod]
+*.sqlite3
+media/
+staticfiles/
+
+# VSCode
+.vscode/
+
+# Environment variables
+.env
